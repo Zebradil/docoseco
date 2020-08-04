@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "docoseco"
-version = "0.1.0"
-description = "Makes docker-compose configs mutable"
+version = "1.0.0"
+description = "Automatize management of docker confgs and secrets "
 authors = ["German Lashevich <german.lashevich@gmail.com>"]
 license = "MIT"
 readme = "README.md"

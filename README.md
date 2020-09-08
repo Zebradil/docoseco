@@ -2,7 +2,7 @@
 
 **Do**cker-**co**mpose **se**crets and **co**nfigs.
 
-Automatize management of docker confgs and secrets.
+Automate management of docker confgs and secrets.
 
 ## Usage
 
@@ -12,12 +12,12 @@ docoseco [CONFIG_ROOT_DIR] < docker-compose.template.yaml > docker-compose.yaml
   CONFIG_ROOT_DIR  Root directory for file search (default: .)
 ```
 
-It reads docker-compose yaml from stdin, updates all config and secret names with corresponding file content hashsums and writes result to stdout.
+`docoseco` reads docker-compose yaml from stdin, updates all config and secret names with the corresponding file content hashsums and writes the result to stdout.
 
 ## Rationale
 
-Docker-compose configs and secrets are immutable by design. So, when config or secret is created from file via
-`docker stack deploy`, it's impossible to update the file and deploy in the same way again. For example:
+Docker-compose configs and secrets are immutable by design. So, when a config or a secret is created from a file via
+`docker stack deploy`, it's impossible to update the file and deploy it in the same way again. For example:
 
 ```yaml
 # docker-compose.yaml
@@ -57,4 +57,3 @@ configs:
     name: my_config-bee414b86ee02806b17104813d44eea4 # Auto-generated config name
     file: ./my_config.txt # This file was changed
 ```
-

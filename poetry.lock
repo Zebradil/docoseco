@@ -1,6 +1,6 @@
 [[package]]
 name = "ruamel-yaml"
-version = "0.17.35"
+version = "0.17.36"
 description = "ruamel.yaml is a YAML parser/emitter that supports roundtrip preservation of comments, seq/map flow style, and map key order"
 category = "main"
 optional = false
@@ -10,7 +10,7 @@ python-versions = ">=3"
 "ruamel.yaml.clib" = {version = ">=0.2.7", markers = "platform_python_implementation == \"CPython\" and python_version < \"3.13\""}
 
 [package.extras]
-docs = ["ryd"]
+docs = ["mercurial (>5.7)", "ryd"]
 jinja2 = ["ruamel.yaml.jinja2 (>=0.2)"]
 
 [[package]]
@@ -28,8 +28,8 @@ content-hash = "1e7d65485558ec1ad75e0133b86f2ac7f228821fc31ed2b5ea3f37f5637ffa33
 
 [metadata.files]
 ruamel-yaml = [
-    {file = "ruamel.yaml-0.17.35-py3-none-any.whl", hash = "sha256:b105e3e6fc15b41fdb201ba1b95162ae566a4ef792b9f884c46b4ccc5513a87a"},
-    {file = "ruamel.yaml-0.17.35.tar.gz", hash = "sha256:801046a9caacb1b43acc118969b49b96b65e8847f29029563b29ac61d02db61b"},
+    {file = "ruamel.yaml-0.17.36-py3-none-any.whl", hash = "sha256:9d0a8ae7050ce0065bab51d4f0b000aa8afa91e8e04d1364bc304491f4f25943"},
+    {file = "ruamel.yaml-0.17.36.tar.gz", hash = "sha256:497d9f12c32e3201b12e897f1c7756bea59a7c50461daff66781598c48a7f289"},
 ]
 ruamel-yaml-clib = [
     {file = "ruamel.yaml.clib-0.2.7-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:d5859983f26d8cd7bb5c287ef452e8aacc86501487634573d260968f753e1d71"},
